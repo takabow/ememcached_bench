@@ -1,0 +1,12 @@
+{application, ememcached_bench,
+    [
+        {description, ""},
+        {vsn, "1"},
+        {registered, []},
+        {applications, [
+            kernel,
+            stdlib
+        ]},
+        {mod, {ememcached_bench_app, []}},
+        {env, [{address, "localhost"}, {port, 11211}, {concurrency, 100}]}
+    ]}.
